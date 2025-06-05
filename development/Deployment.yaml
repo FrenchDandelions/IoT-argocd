@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: will-playground
+  name: wil-playground
 spec:
   selector:
     matchLabels:
-      app: will-playground
+      app: wil-playground
   template:
     metadata:
       labels:
-        app: will-playground
+        app: wil-playground
     spec:
       containers:
-      - name: will-playground
+      - name: wil-playground
         image: wil42/playground:v1
         resources:
           limits:
