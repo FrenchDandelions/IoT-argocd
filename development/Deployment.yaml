@@ -10,10 +10,13 @@ spec:
     metadata:
       labels:
         app: will-playground
-        editor: vscode
     spec:
       containers:
       - name: will-playground
         image: wil42/playground:v1
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "200m"
         ports:
         - containerPort: 8888
