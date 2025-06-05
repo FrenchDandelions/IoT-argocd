@@ -9,4 +9,4 @@ spec:
   ports:
     - port:  8888
       targetPort:  8888
-      NodePort: 30013
+      NodePort: 30010
