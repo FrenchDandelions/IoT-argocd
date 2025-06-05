@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: wil-playground
 spec:
+  replicas: 1
   selector:
     matchLabels:
       app: wil-playground
@@ -13,10 +14,6 @@ spec:
     spec:
       containers:
       - name: wil-playground
-        image: wil42/playground:v1
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "200m"
+        image: wil42/playground:v2
         ports:
         - containerPort: 8888
